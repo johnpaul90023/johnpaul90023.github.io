@@ -1,0 +1,546 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+/* styles the whole html page*/
+html{
+    scroll-behavior: smooth;
+    font-family:tahoma;
+    background-image: url("images/bgcolor1.jpg");
+}
+    
+/* styles the navigation bar*/
+ul{
+    list-style:none;
+    height:50px;
+    width:100%;
+    position:fixed;
+    top:0; left:0;
+    display:flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(28, 28, 28);
+    font-family: 'Righteous', cursive;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+        
+/* styles the navigation bar*/
+ul li{
+    margin:5px;
+    padding:5px;
+}
+        
+/* styles the navigation bar*/
+ul li a{
+    color:rgb(255, 255, 255);
+    text-decoration: none;
+    font-size:20px;
+    padding:5px;
+}
+        
+/* styles the navigation bar*/
+ul li a:hover{
+    background:rgb(253, 253, 253);
+    color:rgb(50, 161, 61);
+}
+
+/* styles the text glow in the navigation bar*/
+@keyframes glow{
+    from {
+        text-shadow: 0 0 1px #fff, 0 0 2px #000000, 0 0 3px #39547e, 0 0 4px #000000, 0 0 5px #00cbe6, 0 0 6px #000000, 0 0 7px #8aac63;
+        }
+        
+    to {
+        text-shadow: 0 0 1px #fff, 0 0 3px #000000, 0 0 4px #2e7376, 0 0 5px #000000, 0 0 6px #4deaff, 0 0 7px #000000, 0 0 8px #96a66c;
+        }
+}
+
+#myImg { /* styles the image*/
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  #myImg:hover {opacity: 0.7;} /* styles the image when its hovered*/
+  
+  /* styles the image when its pressed*/
+  .modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.9); 
+  }
+  
+  /* styles the content of the image*/
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+  }
+
+  /* styles the animation of the image*/
+  .modal-content{  
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  /* styles the animation of the image*/
+  @-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+  }
+  
+  /* styles the animation of the image*/
+  @keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+  }
+  
+  /* styles the close button */
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  /* styles the close button */
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* styles the image when its pressed  */ 
+  @media only screen and (max-width: 500px){
+    .modal-content {
+      width: 100%;
+    }
+  }
+  
+  /* styles the image*/
+  #myImg2 {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  /* styles the image when its hovered*/
+  #myImg2:hover {opacity: 0.7;}
+  
+  /* styles the image when its pressed*/
+  .modal2 {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.9); 
+  }
+  
+  /* styles the content of the image*/
+  .modal-content2 {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+  }
+  
+
+
+  /* styles the animation of the image*/
+  .modal-content2{  
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  /* styles the animation of the image*/
+  @-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+  }
+  
+  /* styles the animation of the image*/
+  @keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+  }
+  
+  /* styles the close button */
+  .close2 {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  /* styles the close button */
+  .close2:hover,
+  .close2:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* styles the image when its pressed  */
+  @media only screen and (max-width: 700px){
+    .modal2-content {
+      width: 100%;
+    }
+  }
+
+  /* styles the image*/
+  #myImg3 {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  /* styles the image when its hovered*/
+  #myImg3:hover {opacity: 0.7;}
+  
+  /* styles the image when its pressed*/
+  .modal3 {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.9); 
+  }
+  
+  /* styles the content of the image*/
+  .modal-content3 {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+  }
+  
+
+  
+  /* styles the animation of the image*/
+  .modal-content3{  
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  /* styles the animation of the image*/
+  @-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+  }
+  
+  /* styles the animation of the image*/
+  @keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+  }
+  
+  /* styles the close button */
+  .close3 {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  /* styles the close button */
+  .close3:hover,
+  .close3:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* styles the image when its pressed  */ 
+  @media only screen and (max-width: 700px){
+    .modal-content3 {
+      width: 100%;
+    }
+  }
+
+  /* styles the image*/
+  #myImg4 {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  /* styles the image when its hovered*/
+  #myImg4:hover {opacity: 0.7;}
+  
+  /* styles the image when its pressed*/
+  .modal4 {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.9); 
+  }
+  
+  /* styles the content of the image*/
+  .modal-content4 {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+  }
+  
+  /* styles the animation of the image*/
+  .modal-content4{  
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  /* styles the animation of the image*/
+  @-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+  }
+  
+  /* styles the animation of the image*/
+  @keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+  }
+  
+  /* styles the close button */
+  .close4 {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  /* styles the close button */
+  .close4:hover,
+  .close4:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* styles the image when its pressed  */ 
+  @media only screen and (max-width: 700px){
+    .modal-content4 {
+      width: 100%;
+    }
+  }
+  /* styles the image*/
+  #myImg5 {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  /* styles the image when its hovered*/
+  #myImg5:hover {opacity: 0.7;}
+  
+  /* styles the image when its pressed*/
+  .modal5 {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.9); 
+  }
+  
+  /* styles the content of the image*/
+  .modal-content5 {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+  }
+  
+  /* styles the animation of the image*/
+  .modal-content5 {  
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  /* styles the animation of the image*/
+  @-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+  }
+  
+  /* styles the animation of the image*/
+  @keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+  }
+  
+  /* styles the close button */
+  .close5 {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  /* styles the close button */
+  .close5:hover,
+  .close5:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* styles the image when its pressed  */
+  @media only screen and (max-width: 700px){
+    .modal-content5 {
+      width: 100%;
+    }
+  }
+
+  /* styles the image*/
+  #myImg6 {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  /* styles the image when its hovered*/
+  #myImg6:hover {opacity: 0.7;}
+  
+  /* styles the image when its pressed*/
+  .modal6 {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.9); 
+  }
+  
+  /* styles the content of the image*/
+  .modal-content6 {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+  }
+  
+  
+  /* styles the animation of the image*/
+  .modal-content6 {  
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  /* styles the animation of the image*/
+  @-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+  }
+  
+  /* styles the animation of the image*/
+  @keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+  }
+  
+  /* styles the close button */
+  .close6 {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  /* styles the close button */
+  .close6:hover,
+  .close6:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* styles the image when its pressed  */ 
+  @media only screen and (max-width: 700px){
+    .modal-content6 {
+      width: 100%;
+    }
+  }
+
+  /* to align all of the pictures   */ 
+  .container {
+    position: relative;
+    float: left;
+    width: 30%;
+    padding: 10px;
+    margin-top: 140px;
+    margin-left: 60px;
+  }
+  
+  /* styles the whole page  */ 
+  * {
+    box-sizing: border-box;
+  }

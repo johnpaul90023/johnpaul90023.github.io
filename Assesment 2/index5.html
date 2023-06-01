@@ -1,0 +1,75 @@
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>Calculator</title>
+    <link href="style2.css" rel="stylesheet"> <!-- Linking the stylesheet-->
+    
+        <div class="displaybox"> <!-- adding a div class to the list to style the navigation bar-->
+            <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index2.html">About</a></li>
+            <li><a href="index3.html">Services</a></li>
+            <li><a href="index4.html">Portfolio</a></li>
+            <li><a href="index5.html">Contact</a></li>
+            </ul>
+        </div>
+</head>
+<body> 
+    <div class="container"> <!-- this is to wrap the whole text in a container-->
+        <form action="action_page.php"> <!-- this is for the text box-->
+          <div class="row"> <!-- this is to align the text-->
+            <div class="col-25"> <!-- this is for the text box-->
+              <label for="fname">First Name</label> <!-- this is for the text inside the text box-->
+            </div>
+            <div class="col-75"> <!-- this is for the text box-->
+              <input type="text" id="fname" name="firstname" placeholder="Your name"> <!-- this is where you can place a text-->
+            </div>
+          </div>
+          <div class="row"> <!-- this is to align the text-->
+            <div class="col-25"> <!-- this is for the text box-->
+              <label for="fname">Last Name</label> <!-- this is for the text inside the text box-->
+            </div>
+            <div class="col-75"> <!-- this is for the text box-->
+              <input type="text" id="fname" name="firstname" placeholder="Your last name"> <!-- this is where you can place a text-->
+            </div>
+          </div>
+          <div class="row"> <!-- this is to align the text-->
+            <div class="col-25"> <!-- this is for the text box-->
+              <label for="lname">Email</label> <!-- this is for the text inside the text box-->
+            </div>
+            <div class="col-75"> <!-- this is for the text box-->
+              <input type="text" id="lname" name="lastname" placeholder="Number"> <!-- this is where you can place a text-->
+            </div>
+          </div>
+          <div class="row"> <!-- this is to align the text-->
+            <div class="col-25"> <!-- this is for the text box-->
+              <label for="emirate">Emirate</label> <!-- this is for the text inside the text box-->
+            </div>
+            <div class="col-75"> <!-- this is for the text box-->
+              <select id="emirate" name="emirate"> <!-- this is where you can place a text-->
+                <option value="abudhabi">Abu Dhabi</option> <!-- this gives the person a choice on what to choose-->
+                <option value="dubai">Dubai</option>
+                <option value="sharjah">Sharjah</option>
+                <option value="ajman">Ajman</option>
+                <option value="ummal-quwain">Umm Al-Quwain</option>
+                <option value="fujairah">Fujairah</option>
+                <option value="rasalkhaimah">Ras Al Khaimah</option>
+              </select>
+            </div>
+          </div>
+          <div class="row"> <!-- this is to align the text-->
+            <div class="col-25"> <!-- this is for the text box-->
+              <label for="subject">Subject</label> <!-- this is for the text inside the text box-->
+            </div>
+            <div class="col-75"> <!-- this is for the text box-->
+              <textarea id="subject" name="subject" placeholder="Write something" style="height:200px"></textarea> <!-- this is where you can place a text-->
+            </div>
+          </div>
+          <div class="row"> <!-- this is to align the text-->
+            <input type="submit" value="Submit"> <!-- this is for the submit button-->
+          </div>
+        </form>
+      </div>
+    </body>
+</html>
+    

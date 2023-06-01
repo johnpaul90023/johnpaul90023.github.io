@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+/* styles the whole html page*/
+html{
+    scroll-behavior: smooth;
+    font-family:tahoma;
+    background-image: url("images/bgcolor1.jpg");
+}
+    
+/* styles the navigation bar*/
+ul{
+    list-style:none;
+    height:50px;
+    width:100%;
+    position:fixed;
+    top:0; left:0;
+    display:flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(28, 28, 28);
+    font-family: 'Righteous', cursive;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+        
+/* styles the navigation bar*/
+ul li{
+    margin:5px;
+    padding:5px;
+}
+        
+/* styles the navigation bar*/
+ul li a{
+    color:rgb(255, 255, 255);
+    text-decoration: none;
+    font-size:20px;
+    padding:5px;
+}
+        
+/* styles the navigation bar*/
+ul li a:hover{
+    background:rgb(253, 253, 253);
+    color:rgb(50, 161, 61);
+}
+
+/* styles the glow in the text*/
+@keyframes glow{
+    from {
+        text-shadow: 0 0 1px #fff, 0 0 2px #000000, 0 0 3px #39547e, 0 0 4px #000000, 0 0 5px #00cbe6, 0 0 6px #000000, 0 0 7px #8aac63;
+        }
+        
+    to {
+        text-shadow: 0 0 1px #fff, 0 0 3px #000000, 0 0 4px #2e7376, 0 0 5px #000000, 0 0 6px #4deaff, 0 0 7px #000000, 0 0 8px #96a66c;
+        }
+}
+
+/* styles the whole page*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* styles the box*/
+.box{
+    width: 30%;
+    float: left;
+    margin: 100px 175px;
+    background: #69a87e;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.15);
+    margin-top: 148px;
+}
+
+/* styles the image in the box*/
+img{
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* styles the title in the box*/
+.box h1{
+    margin-bottom: 10px;
+    font-family: 'Righteous', cursive;
+    text-align: center;
+}
+
+/* styles the paragraph in the box*/
+.box p{
+    font-size: 15px;
+    line-height:20px;
+    height: 90px;
+    overflow: hidden;
+    font-family: 'Righteous', cursive;
+}
+
+/* styles the button*/
+.box a{
+    display: inline-block;
+    color: #ffff;
+    background-color: rgb(28, 28, 28);
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    margin-top: 15px;
+    font-family: 'Righteous', cursive;
+}
+
+/* styles the button*/
+.box a:hover{
+    box-shadow: 0 5px 5px rgba(0,0,0,0.2);
+}
+
+/* styles the box when the button is pressed*/
+.box.showContent p{
+    height: auto;
+}
+
+/* styles the box when the button is pressed*/
+.box.showContent a.readmore-btn{
+    background-color:  rgb(121, 45, 45);
+}
+
+/* styles the text inside the box*/
+h1{
+    font-size: 50px;
+}

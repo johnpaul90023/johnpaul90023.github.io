@@ -1,0 +1,125 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+
+/* styles the whole html page*/
+html{
+    scroll-behavior: smooth;
+    font-family:tahoma;
+    background-image: url("images/bgcolor2.png");
+    background-position: center;
+    background-size: cover;
+}
+    
+/* styles the navigation bar*/
+    ul.two{
+    list-style:none;
+    height:50px;
+    width:100%;
+    position:fixed;
+    top:0; left:0;
+    display:flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(28, 28, 28);
+    font-family: 'Righteous', cursive;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+        
+/* styles the navigation bar*/
+    ul.two li.two{
+    margin:5px;
+    padding:5px;
+}
+        
+/* styles the navigation bar*/
+ul.two li.two a{
+    color:rgb(255, 255, 255);
+    text-decoration: none;
+    font-size:20px;
+    padding:5px;
+}
+        
+/* styles the navigation bar*/
+ul.two li.two a:hover{
+    background:rgb(253, 253, 253);
+    color:rgb(50, 161, 61);
+}
+
+.wrapper{
+    display: inline-flex;
+}
+
+.wrapper .static-txt{
+    color: white;
+    font-weight: 400;
+    font-size: 60px;
+    margin-top: 130px;
+    line-height: 1px;
+    margin-left: 80px;
+    font-family: 'Righteous', cursive;
+}
+
+.wrapper .dynamic-txts{
+    margin-left: 37px;
+    line-height: 100px;
+    height:90px;
+    overflow: hidden;
+}
+
+.dynamic-txts li.one{
+    color:rgb(50, 161, 61);
+    list-style: none;
+    font-size: 55px;
+    font-weight: 500;
+    animation: slide 11.5s steps(3) infinite;
+    top:0;
+    position: relative;
+}
+
+.dynamic-txts li.one span{
+    position: relative;
+}
+
+.dynamic-txts li.one span::after{
+    content: "";
+    position: absolute;
+    height: 130%;
+    width:100%;
+    border-left: 2px solid rgb(255, 255, 255);
+    left: 0;
+    animation: typing 3.8s steps(45) infinite;
+    background-color: rgb(28, 28, 28);
+}
+
+@keyframes typing{
+    100%{
+        left: 100%;
+        margin: 0 -35px 0 35px;
+    }
+}
+
+@keyframes slide{
+    100%{
+        top: -300px;
+    }
+}
+
+@keyframes glow{
+from {
+    text-shadow: 0 0 1px #fff, 0 0 2px #000000, 0 0 3px #39547e, 0 0 4px #000000, 0 0 5px #00cbe6, 0 0 6px #000000, 0 0 7px #8aac63;
+    }
+    
+to {
+    text-shadow: 0 0 1px #fff, 0 0 3px #000000, 0 0 4px #2e7376, 0 0 5px #000000, 0 0 6px #4deaff, 0 0 7px #000000, 0 0 8px #96a66c;
+    }
+}
+
+body{
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    min-height: 98vh;
+}
+

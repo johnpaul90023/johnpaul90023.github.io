@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+/* styles the whole html page*/
+html{
+    scroll-behavior: smooth;
+    font-family:tahoma;
+    background-image: url("images/bgpage2.png");
+}
+    
+/* styles the navigation bar*/
+ul{
+    list-style:none;
+    height:50px;
+    width:100%;
+    position:fixed;
+    top:0; left:0;
+    display:flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(28, 28, 28);
+    font-family: 'Righteous', cursive;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+        
+/* styles the navigation bar*/
+ul li{
+    margin:5px;
+    padding:5px;
+}
+        
+/* styles the navigation bar*/
+ul li a{
+    color:rgb(255, 255, 255);
+    text-decoration: none;
+    font-size:20px;
+    padding:5px;
+}
+        
+/* styles the navigation bar*/
+ul li a:hover{
+    background:rgb(253, 253, 253);
+    color:rgb(50, 161, 61);
+}
+
+/* styles the text with glow */
+@keyframes glow{
+    from {
+        text-shadow: 0 0 1px #fff, 0 0 2px #000000, 0 0 3px #39547e, 0 0 4px #000000, 0 0 5px #00cbe6, 0 0 6px #000000, 0 0 7px #8aac63;
+        }
+        
+    to {
+        text-shadow: 0 0 1px #fff, 0 0 3px #000000, 0 0 4px #2e7376, 0 0 5px #000000, 0 0 6px #4deaff, 0 0 7px #000000, 0 0 8px #96a66c;
+        }
+}
+
+/* styles the title */
+h1{
+    color: white;
+    font-size: 55px;
+    text-align: right;
+    margin-top: 280px;
+    margin-right: 50px;
+}
+
+/* styles the paragraph*/
+p{
+    color:rgb(253, 253, 253);
+    font-size: 27px;
+    font-family: 'Righteous', cursive;
+    font-family: 'Righteous', cursive;
+    text-align: right;
+    margin-right: 25px;
+}
